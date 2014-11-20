@@ -1,0 +1,11 @@
+.widget_subscribe
+  .b_title
+    h4 Subscribe to RSS Feeds
+  .widget.clearfix
+    p Get all latest content delivered to your email a few times a month. Updates and news about all categories will send to you.
+    form.widget_rss_subscription action="http://feedburner.google.com/fb/a/mailverify" method="post" onsubmit="window.open('http://feedburner.google.com/fb/a/mailverify?uri=sevenpsd', 'popupwindow', 'scrollbars=yes,width=550,height=520');return true" target="popupwindow" 
+      input name="email" placeholder=("Your Email") required="" type="text" /
+      input name="uri" type="hidden" value="sevenpsd" /
+      input name="loc" type="hidden" value="en_US" /
+      button#submit type="submit" value="Subscribe" 
+        span Sign Up

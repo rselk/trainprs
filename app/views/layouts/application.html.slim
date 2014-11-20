@@ -1,0 +1,12 @@
+doctype html
+html lang=I18n.locale
+  = render 'head'
+  body
+    #layout.boxed-margin
+      = render 'navbar'
+      = render 'scrollbar'
+      = render 'flash'
+      = yield
+      = render 'footer'
+    #toTop
+      i.icon-arrow-thin-up

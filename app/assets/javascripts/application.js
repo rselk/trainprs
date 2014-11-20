@@ -12,5 +12,9 @@
 //
 //= require jquery
 //= require jquery_ujs
-//= require turbolinks
-//= require_tree .
+//= require custom
+//= require jquery.fitvids
+//= require jquery.li-scroller-rtl.1.0
+//= require jquery.li-scroller.1.0
+//= require seven.min.js
+//= require owl.carousel.min.js

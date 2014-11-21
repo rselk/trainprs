@@ -5,5 +5,6 @@ Rails.application.routes.draw do
   root 'static_pages#index'
   resources :p, controller: :profile
   resources :after_signup
+  resources :listings
   
 end

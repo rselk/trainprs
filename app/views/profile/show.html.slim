@@ -1,1 +1,59 @@
-= @user.email
+.page-content
+  .row.clearfix
+    .grid_4.omega
+      .b_title
+        h4
+          span User Info
+      .b_block.b_6.clearfix
+        .first_post.grid_6.alpha
+          .item.wgr.T_post.introfx
+            .featured_thumb
+                = image_tag('stock/photodune-1333976-255x245.jpg', :alt => '', :height => "255", :width => "333")
+        .more_posts.grid_6.omega.introfxo
+          / move this to a cell, so we can cache it.
+          h2 rselk
+          ul.review-list
+            li
+              = link_to "ryanselk.com", "http://ryanselk.com" 
+            li
+              span Calgary, Alberta
+            li
+              span Owner of 15 Gems
+            li
+              span For Hire
+    .grid_4
+      .b_title
+        h4 Authored 
+      ol
+        li
+          = link_to('Cells', '#')
+        li
+          = link_to('Minitest', '#')
+        li
+          = link_to('pg', '#')
+        li
+          = link_to('sqlite3', '#')
+        li
+          = link_to('rails', '#')
+    .grid_4
+      .b_title
+        h4 Recent
+      ol
+        li
+          = link_to('Cells', '#')
+        li
+          = link_to('Minitest', '#')
+        li
+          = link_to('pg', '#')
+        li
+          = link_to('sqlite3', '#')
+        li
+          = link_to('rails', '#')
+    .row.clearfix
+      .grid_8
+        br
+        .b_title
+          h4 Activity
+        .b5
+          = image_tag "stock/311-entete-fotolia_51161496_m-768x350.jpg", alt: ""
+

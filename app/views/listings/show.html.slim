@@ -1,0 +1,78 @@
+.page-content
+  .row.clearfix
+    .grid_9
+      .b_title
+        h3 = "hello world"
+      article.b_block.post.r_post
+        .details.clearfix.mb
+          span.s_category
+            span.mid
+              i.fa.fa-download.mi
+
+            span.mid
+              i.fa.fa-star-o.mi
+
+            span.mid
+              i.fa.fa-users.mi
+
+        div
+          p = "hello world2"
+      .grid_6.omega.widget_categories
+        .b_title
+          h3 Dependencies
+        article.b_block.post.r_post
+          .details.clearfix.mb
+            span.s_category
+              span.mid
+                i.fa.fa-cogs.mi
+      .item.T_post.introfx
+        .featured_thumb
+          a href="post_single.html" rel="bookmark" 
+            img src="http://placehold.it/255x180" /
+            span.thumb-icon.small
+              i.icon-forward
+        .details
+          h3
+            a href="post_image.html" rel="bookmark"  The ultimate guide to logo design
+          a.date_c href="#" 
+            i.icon-calendar.mi
+            | Feb 4, 2014
+    .grid_3.righter.omega
+      #review.review-wrapper.bar-point
+            / move this to a cell, so we can cache it.
+            h5.review-title Gem Statistics 
+            ul.review-list
+              li
+                span = image_tag "https://badge.fury.io/rb/.svg"
+              /li
+                / Add repo build ?
+                span = image_tag "https://travis-ci.org/rails/rails.svg?branch=master"
+              /li
+                Add code coverage ?
+              li
+                span ruby version supported
+              li
+                span platforms (ruby, jruby, ect)
+            /.review-total-wrapper
+              span.review-total-box itemprop="review"  9.3/10
+      .widget.clearfix.more_posts
+        #tab-recent.T20-tab.group
+          - 4.times do
+            .item_small
+              .one_post
+                .featured_thumb
+                  a href="#" title=("Download This Gem") 
+                    img src="http://placehold.it/80x80" /
+                    span.thumb-icon
+                      i.icon-export
+                .item-details
+                  h3
+                    a href="#" rel="bookmark" title=("Download This Gem")  Download This Gem
+                  .post_meta
+                    a href="#" rel="date" title=("Download This Gem") 
+                      i.fa.fa-download.mi
+                      | 20,123 Downloads
+
+
+
+   

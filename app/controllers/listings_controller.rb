@@ -8,9 +8,9 @@ class ListingsController < ApplicationController
     @listing = Listing.new(listing_params)
     if @listing.save!
       flash[:success] = "Your listing has been added!"
-      redirect_to p_path(current_user) #eventually to this listing
+      redirect_to listing_path(@listing)
     else 
-      redirect_to p_path(current_user)
+      redirect_to edit_listing_path(@listing)
       flash[:error] = "Invalid Listing. Please Try Again"
     end
   end
@@ -23,9 +23,9 @@ class ListingsController < ApplicationController
     @listing = Listing.find(params[:id])
     if @listing.save!
       flash[:success] = "Your listing has been updated!"
-      redirect_to p_path(current_user) #eventually to this listing
+      redirect_to listing_path(@listing)
     else 
-      redirect_to p_path(current_user)
+      redirect_to edit_listing_path(@listing)
       flash[:error] = "Invalid Listing. Please Try Again"
     end
   end

@@ -1,4 +1,5 @@
 class ListingsController < ApplicationController
+  has_scope :starts_with
 
   def new
     @listing = Listing.new
@@ -37,6 +38,8 @@ class ListingsController < ApplicationController
 
   # index of all listings
   def index
+    #@listings = Listing.paginate(:page => params[:page], :per_page => 2 )
+    @listings = apply_scopes(Listing).all#.paginate(:page => params[:page], :per_page => 2 )
   end
 
   # show
@@ -47,6 +50,6 @@ class ListingsController < ApplicationController
   private
 
     def listing_params 
-      params.require(:listing).permit(:length_in_days, :coach_id, :information)
+      params.require(:listing).permit(:length_in_days, :coach_id, :information, :title)
     end
 end

@@ -39,7 +39,8 @@ class ListingsController < ApplicationController
   # index of all listings
   def index
     #@listings = Listing.paginate(:page => params[:page], :per_page => 2 )
-    @listings = apply_scopes(Listing).all#.paginate(:page => params[:page], :per_page => 2 )
+    @params = params.slice(:starts_with)
+    @listings = apply_scopes(Listing).all.paginate(:page => params[:page], :per_page => 2 )
   end
 
   # show

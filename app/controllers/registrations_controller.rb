@@ -3,6 +3,14 @@ class RegistrationsController < Devise::RegistrationsController
     @user = current_user
   end
 
+  def update
+    redirect_to 'http://google.ca'
+  end
+
+  def edit 
+    redirect_to 'http://google.ca'
+  end
+
   protected
 
   # Devise: Where to redirect users once they have signed up
